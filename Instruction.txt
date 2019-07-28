@@ -1,0 +1,1 @@
+Js and css are minified and orignal unminified files are located  in same location as minified output
