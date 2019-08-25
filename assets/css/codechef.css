@@ -1,20 +1,26 @@
 body {
   margin: 0px
 }
-
+li.embla__slide{
+	padding-left:0px !important
+}
 p {
   margin: 0px;
+}
+.is-selected{
+	box-shadow: 1px 3px 8px rgba(0,0,0,0.1);
+	margin-bottom:3px;
 }
 
 .header-top-bar {
   background-color: #ffffff;
   min-height: 1.5%;
-  padding-left: 7%;
-  padding-right: 7%;
+ padding-left: 5%;
+    padding-right: 5%;
   overflow: hidden;
   clear: both;
   border-bottom: 1px solid #f2f2f2;
-  padding-bottom: 1%;
+padding-bottom: 1.2%;
 }
 
 img.logo-img {
@@ -86,7 +92,7 @@ img.logo-img {
   color: #34404b;
   padding: 8px 20px 8px 20px;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .header-signup-flex>div:nth-child(2) {}
@@ -100,15 +106,18 @@ img.logo-img {
 .header-main-bar {
   overflow: hidden;
   clear: both;
-  padding-left: 6%;
-  padding-right: 8%;
+padding-left: 5%;
+    padding-right: 5%;
+	padding-bottom: 0.2%;
 }
 
 .logo-holder {
   width: 30%;
   float: left;
 }
-
+ul.navigation-bar li:last-child a{
+	margin-right: 0px;
+}
 .navigation-holder {
   width: 70%;
   float: left;
@@ -149,29 +158,35 @@ ul.navigation-bar li.active a {
 }
 
 ul.navigation-bar li.active a:after {
-  content: "";
-  display: block;
-  ;
-  width: 60%;
-  padding-top: 5px;
-  border-bottom: 3px solid #ff5912;
+  background:url('../images/Line 1066@2x.png');
+   content: "";
+    display: block;
+    height: 4px;
+    width: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;
+margin-top:5%;	
 }
-
-ul.navigation-bar li a:after {
-  content: "";
-  display: block;
-  width: 60%;
-  padding-top: 5px;
+ul.navigation-bar li a:after{
+	 content: "";
+    display: block;
+	height: 4px;	
 }
+/* ul.navigation-bar li a:after { */
+  /* content: ""; */
+  /* display: block; */
+  /* width: 60%; */
+  /* padding-top: 5px; */
+/* } */
 
 .main-banner {
-  background-image: url('../images/Chef.png'), url('../images/Banner_Base_White.png');
-  background-position: 97% bottom, left top;
+  background-image: url('../images/Chef@2x.png'), url('../images/Banner_Base_White.png');
+  background-position: 97% 101%, left top;
   background-repeat: no-repeat, repeat;
   padding-top: 7%;
-  padding-left: 12%;
+     padding-left: 16%;
   padding-bottom: 7%;
-  background-size: auto, cover;
+background-size: 13%, cover;
 }
 
 .banner-title {
@@ -213,17 +228,17 @@ ul.navigation-bar li a:after {
   letter-spacing: normal;
   color: #ffffff;
   border: none;
-  margin-top: 5%;
+  margin-top: 3.5%;
 }
 
 .exam-dates {
   font-family: 'Ubuntu', sans-serif;
-  padding-top: 21px;
-  padding-bottom: 21px;
+padding-top: 1%;
+    padding-bottom: 1%;
   background-color: #2f2f2f;
   font-family: Ubuntu;
   color: #f2f2f2;
-  padding-left: 12%
+  padding-left: 16%
 }
 
 .exam-dates-text {
@@ -254,10 +269,20 @@ ul.navigation-bar li a:after {
   margin-right: 48px;
   font-size: 24px;
 }
+.date-seperator hr{
+	    border: none;
+    border-left: 1px solid #F2F2F2;
+    height: 25px;
+    width: 1px;
+    display: inherit;
+}
+.exam-dates span{
+	    background-color: #2f2f2f;
+}
 
 .dsa-cerificate-container {
-  padding-left: 12%;
-  padding-right: 12%;
+      padding-left: 16%;
+    padding-right: 16%;
   background-color: #f4f6f8;
   padding-top: 82px;
   padding-bottom: 52px;
@@ -325,7 +350,7 @@ ul.levels-tabs li {
   font-family: 'Ubuntu', sans-serif;
   display: inline-block;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.2;
@@ -347,6 +372,8 @@ ul.levels-tabs li {
 ul.levels-tabs li.active {
   color: #34404b;
   font-size: 20px;
+    font-weight: bold;
+
 }
 
 ul.levels-tabs li:last-child {
@@ -354,11 +381,14 @@ ul.levels-tabs li:last-child {
 }
 
 ul.levels-tabs li.active:after {
-  content: "";
-  display: block;
-  width: 20px;
-  padding-top: 5px;
-  border-bottom: 3px solid #ff5912;
+   background:url('../images/Line 1066@2x.png');
+   content: "";
+    display: block;
+    height: 4px;
+    width: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;	
+	    margin-top: 5%;	
 }
 
 ul.levels-tabs li:after {
@@ -369,8 +399,8 @@ ul.levels-tabs li:after {
 }
 
 .tabs-container {
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 16%;
+    padding-right: 16%;
 }
 
 .tab-text {
@@ -415,8 +445,8 @@ ul.levels-tabs li:after {
   vertical-align: middle;
 }
 
-.p-l-5 {
-  padding-left: 5%;
+.p-l-6 {
+  padding-left: 6%;
 }
 
 .course-desc .width-60 {
@@ -449,8 +479,8 @@ ul.levels-tabs li:after {
   margin-top: 0.8%;
 }
 
-.m-t-17 {
-  margin-top: 17px;
+.m-t-4per {
+  margin-top: 4%;
 }
 
 .course-price {
@@ -534,10 +564,10 @@ ul.levels-tabs li:after {
   letter-spacing: normal;
   color: #ffffff;
   border: none;
-  margin: 0 auto;
-  text-align: center;
+    margin-left: 36%;
+	text-align: center;
   display: block;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .certified-user-heading {
@@ -571,15 +601,21 @@ ul.levels-tabs li:after {
   height: 395px !important;
   background: linear-gradient(to right, #f7f7f7 50%, #fff 50%);
   /* border: solid 0.5px #cbcbcb; */
-  padding-left: 15%;
+  padding-left: 18%;
   padding-top: 15%;
-  padding-right: 15%;
+  padding-right: 10%;
 }
 
 .user-info-holder {
   margin-top: 45px;
 }
-
+.footer-links-row .codechef-logo{
+	    max-width: 73%;
+}
+.footer-firstrow .footer-links-row{
+	margin-left: 2.5%;
+    margin: 0 auto;
+}
 .user-name {
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
@@ -734,12 +770,13 @@ ul.levels-tabs li:after {
   letter-spacing: normal;
   text-align: left;
   color: #34404b;
-  margin-right: 3%;
+  margin-right: 8%;
 }
 
 .footer-firstrow .footer-links-row .dot-design {
   position: absolute;
-  margin-top: -0.3%;
+  margin-left: 1.1%;
+      margin-top: -0.5%;
 }
 
 .footer-firstrow .footer-links-row .dot {
@@ -750,11 +787,14 @@ ul.levels-tabs li:after {
 }
 
 .footer-firstrow .footer-links-row li.active:after {
-  content: "";
-  display: block;
-  width: 60%;
-  padding-top: 5px;
-  border-bottom: 3px solid #ff5912;
+  background:url('../images/Line 1066@2x.png');
+   content: "";
+    display: block;
+    height: 4px;
+    width: 68%;
+    background-size: contain;
+    background-repeat: no-repeat;	
+	    margin-top: 5%;	
 }
 
 .footer-firstrow .footer-links-row li.footer-menu:after {
@@ -832,7 +872,7 @@ ul.levels-tabs li:after {
   font-stretch: normal;
   line-height: 2.13;
   letter-spacing: -0.2px;
-  text-align: left;
+  text-align: right;
   color: #28313b;
 }
 
@@ -846,7 +886,7 @@ ul.levels-tabs li:after {
 
 .testimonial-container {
   background-color: #f4f6f8;
-  padding-top: 5%;
+  padding-top: 7%;
   margin-top: 5%;
   padding-bottom: 7%;
 }
@@ -884,6 +924,7 @@ ul.levels-tabs li:after {
   padding-top: 15%; */
   width: 52%;
   padding: 4%;
+      padding-top: 6%;
   padding-bottom: 2%;
   display: block;
   margin: 0 auto;
@@ -900,8 +941,10 @@ ul.levels-tabs li:after {
 
 .single-testimony .table-cell img.user-photo {
   position: absolute;
-  top: 18%;
-  max-height: 82%;
+  top: 32%;
+  /* max-height: 82% */
+  max-width: 70%;
+    left: 30%;
 }
 
 .single-testimony .table-cell:first-child {
@@ -921,12 +964,16 @@ ul.levels-tabs li:after {
   color: #2f2f2f;
   position: relative;
   padding-left: 4%;
+  padding-right:16%;
+}
+.single-testimony .width50.dot-design{
+	    margin-top: -1%;
 }
 
 .testimony-text img {
   position: absolute;
   top: -19%;
-  left: -3%;
+  left: -1%;
 }
 
 .single-testimony .user-name {
@@ -1175,6 +1222,35 @@ ul.levels-tabs li:after {
 }
 
 @media only screen and (min-width:320px) and (max-width: 767px) {
+	.width-60 .tab-text{
+	font-size:20px;	
+	}
+	.dsa-content p{
+		font-size:18px;
+		    padding-right: 4%;
+			letter-spacing: 0.03em;
+	}
+	.footer-firstrow .footer-links-row{
+		 width: 20%;
+    margin: 0 auto;
+	}
+	.footer-secondrow .footer-links-row{
+		    width: 20%;
+    margin: 0 auto;
+	}
+	
+	.footer-links-row .codechef-logo{
+		    max-width: 68px;
+	}
+	.header-top-bar{
+		padding-bottom: 3.2%;
+	}
+	.header-main-bar{
+		padding-bottom: 2.0%;
+	}
+	ul.navigation-bar li.active a:after{
+	    width: 51%;	
+	}
   .header-top-bar-left {
     width: 100%;
     float: none;
@@ -1219,13 +1295,13 @@ ul.levels-tabs li:after {
     padding: 3% 0px;
   }
   .banner-title {
-    font-size: 23px;
+    font-size: 31px;
     color: #3b3a3a;
     line-height: 1.39;
   }
   .banner-text {
-    padding-right: 28%;
-    font-size: 16px;
+    padding-right: 22%;
+        font-size: 18px;
     margin-top: 22%;
     line-height: 2;
   }
@@ -1234,11 +1310,15 @@ ul.levels-tabs li:after {
     height: 50.2px;
     font-size: 18px;
     line-height: 2.67;
-    margin-bottom: 18%;
+    margin-bottom: 21%;
     margin-top: 9%;
   }
   .main-banner {
     padding-left: 7%;
+	    padding-top: 12%;
+		background-position: 99% 101%, left top;
+		background-image: url(../images/Chef@2x.png), url(../images/Banner_Base_White.png);
+		background-size: 46%, auto;
   }
   .exam-dates {
     display: grid;
@@ -1246,6 +1326,8 @@ ul.levels-tabs li:after {
     padding-left: 7%;
     grid-gap: 4%;
     grid-row-gap: 2.5rem;
+	    padding-bottom: 9%;
+    padding-top: 9%;
   }
   .date-seperator {
     display: none;
@@ -1264,7 +1346,7 @@ ul.levels-tabs li:after {
     font-size: 36px;
     color: #3b3a3a;
     text-align: left;
-    margin-bottom: 15%;
+    margin-bottom: 13%;
   }
   .dsa-cerificate-container {
     padding-left: 7%;
@@ -1329,7 +1411,7 @@ ul.levels-tabs li:after {
     width: 100%;
     float: none
   }
-  .course-desc .width-60.p-l-5 {
+  .course-desc .width-60.p-l-6 {
     width: 100%;
     float: none;
     padding-left: 0px;
@@ -1442,7 +1524,8 @@ ul.levels-tabs li:after {
   .single-testimony .table-cell img.user-photo {
     min-width: 100px;
     position: absolute;
-    top: 67%;
+    top: 66%;
+	left: 2%;
   }
   .single-testimony .user-name {
     padding-left: 23%;
@@ -1525,17 +1608,18 @@ ul.levels-tabs li:after {
     margin-right: 4%;
   }
   .footer-container hr {
-    margin: 5% -5% 9% -5%;
+    margin: 7% -5% 9% -5%;
   }
   .footer-firstrow .footer-links-row li {
     display: block;
-    text-align: center;
+    text-align: left;
     margin-bottom: 3%;
     font-size: 14px;
+	margin-bottom:17%
   }
   .footer-firstrow .footer-links-row li.heading {
-    text-align: center;
-    margin-bottom: 4%;
+    text-align: left;
+    margin-bottom: 20%;
     font-size: 14px;
     color: #28313b;
   }
@@ -1556,12 +1640,12 @@ ul.levels-tabs li:after {
   }
   .footer-secondrow .footer-links-row li {
     display: block;
-    text-align: center;
-    margin-bottom: 4%;
+    text-align: left;
+    margin-bottom: 20%;
     font-size: 14px;
   }
   .footer-secondrow .footer-links-row li.heading {
-    text-align: center;
+    text-align: left;
     display: block;
     font-size: 14px;
     color: #28313b;
@@ -1598,6 +1682,8 @@ ul.levels-tabs li:after {
   .single-testimony hr {
     margin-left: 23%;
     width: 65%;
+	margin-top: 6%;
+    margin-bottom: 2%;
   }
 }
 
@@ -1643,4 +1729,31 @@ ul.levels-tabs li:after {
     top: 18%;
     max-height: 82%;
   }
+}
+
+@media only screen and (max-width:1200px) and (min-width:700px){
+.footer-container{
+	padding: 2% 3% 4% 5%;	
+}
+.single-testimony .table-cell img.user-photo{
+	top: 47%;
+}
+.payment-methods {
+
+	text-align: left;
+}
+}	
+@media only screen and (max-width:1440px) and (min-width:1200px){
+	.single-testimony .table-cell img.user-photo{
+			top: 39%;
+
+	}
+	.footer-firstrow .footer-links-row li.heading{
+		    margin-right: 9%;
+	}
+	.footer-container{
+		padding: 2% 3% 4% 3%;
+	}
+
+
 }
